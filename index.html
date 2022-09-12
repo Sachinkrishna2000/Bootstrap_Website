@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3276a9b1ae.js" crossorigin="anonymous"></script>
+    <style>
+      .img_fluid{
+       
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+      }
+      .carousel-item p{
+        text-align: center;
+      }
+      h2{
+        color: gold;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+      }
+  
+      
+      p {
+        color: white;
+        text-align: justify;
+        font-size: 20px;
+        font-family: cursive;
+        line-height: 1.1 cm;
+  
+      }
+  
+      .card-box {
+        /*margin-left: 40px;*/
+        border: 3px solid gold;
+        border-radius: 30px;
+      }
+      .text-danger{
+        display: grid;
+        font-size: 20px;
+        text-align: center;
+        color:red;
+      }
+      .text-second{
+        color: white;
+        text-align: justify;
+        font-size: 17px;
+        font-family: cursive;
+        line-height: 1.2 cm;
+      }
+
+      .btn1{
+       
+        text-align: center;
+        margin-left: 25%;
+        background-color: navy;
+        color: yellow;
+        width:50%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid red;
+
+      }
+      .btn1:hover{
+        background-color: rgb(38, 47, 231);
+      }
+  
+      
+      table{
+    width: 100%;
+    table-layout: fixed;
+    border-color: aqua;
+    }
+    th{
+    height: 50px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: darkgoldenrod;
+    }
+    tr:nth-child(even){
+    background-color: burlywood;
+    color: crimson;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    }
+    tr:nth-child(odd){
+    background-color: beige;
+    color: blue;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    
+    }
+    tr:hover{
+    background-color: aliceblue;
+    }
+    
+    </style>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: gold;">
+            <img src="assets/e14d152a92fe47caa4d386eac0bca208.png" alt="" width="50" height="35" class="d-inline-block align-text-top">
+            COURSEMY
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#foot">Contact Us</a>
+              </li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid" style="background-color: black;">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://talktobusiness.com/wp-content/uploads/2022/04/What-Is-Web-Development.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption d-block">
+              <h5>Be Agile Be in Demand</h5>
+              <p>Enhance Your Design Skills From The Best Experts</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption d-block">
+              <h5>Be Agile Be in Demand</h5>
+              <p>Enhance Your Design Skills From The Best Experts</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.chandigarhhelp.com/wp-content/uploads/2020/01/Top-Java-Training-Institutes-in-Chandigarh.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption d-block">
+              <h5>Be Agile Be in Demand</h5>
+              <p>Enhance Your Design Skills From The Best Experts</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <br>
+      <br>
+      <!--<div class="container-fluid" style="background-color: black;">-->
+      <div class="container">
+        <div class="col col-12">
+        <h2 id="about"><i>About Us</h2>/<i></h2>
+        <p><i>Coursemy was launched in 2012 by two Stanford Computer Science
+          professors, Andrew Ng and Daphne Koller, with a mission to provide
+          universal access to world-class learning.
+          
+          It is now one of the largest online learning platforms in the
+          world, with 102 million registered learners as of March 31, 2022.
+          Coursera partners with over 250 leading university and industry
+          partners to offer a broad catalog of content and credentials, including
+          courses, Specializations, Professional Certificates, Guided Projects, and
+          bachelor’s and master’s degrees.
+          
+          Institutions around the world use Coursera to upskill and reskill
+          their employees, citizens, and students in fields such as data science,
+          technology, and business. Coursera became a B Corp in February 2021.</i></p>
+        </div>
+      <div class="row">
+        <div class="col-12">
+            <h2 class="mt-4 mb-4" id="services">Services</h2><br><br>
+        </div>
+       
+        <div class="col-md-6 col-lg-3">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box h-100">
+                <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-block" style="display: grid;">
+                <h3 class="mt-2 mb-2 text-danger">Web Development</h3>
+                <p class="text-second">Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management </p>
+                </div>
+                <div class="card-block" style="display: grid;">
+                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+                </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box h-100">
+                <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/270/270780.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-block" style="display: grid;">
+                <h3 class="mt-2 mb-2 text-danger">App Development</h3>
+                <p class="text-second">Android software development is the process by which applications are created for devices running the Android operating system. Android apps can be written using Kotlin, Java, and C++ languages</p>
+                </div>
+                <div class="card-block" style="display: grid;">
+                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+                </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box h-100">
+                <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3759/3759268.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-block" style="display: grid;">
+                <h3 class="mt-2 mb-2 text-danger">Cyber Security</h3>
+                <p class="text-second">Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security</p>
+                </div>
+                <div class="card-block" style="display: grid;">
+                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+                </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box h-100">
+                <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/8020/8020363.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-block" style="display: grid;">
+                <h3 class="mt-2 mb-2 text-danger">Cloud Computing</h3>
+                <p class="text-second">Cloud computing is a general term for anything that involves delivering hosted services over the internet. These services are divided into 3 categories or 3 types of cloud computing: IAAS, PAAS & SAAS</p>
+                </div>
+                <br>
+                <div class="card-block" style="display: grid;">
+                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+                </button>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+      <br>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">User Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h2 class="mt-4 mb-4" id="courses">Courses</h2><br><br>
+    </div>
+      <table class="table table-hover table-striped table-bordered" style="width:100%;" border="2">
+        <thead>
+        <tr style="background-color: brown;""><th>Training Name</th><th>Training Period</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Software Engineering<td>8 Weeks</td></tr>
+          <tr><td>Object Oriented Programming</td><td>7 Weeks</td></tr>
+          <tr><td>Database and MySQL</td><td>6 Weeks</td></tr>
+          <tr><td>WEB Development</td><td>4 Weeks</td></tr>
+          <tr><td>Data Analytics</td><td>7 Weeks</td></tr>
+          <tr><td>Machine Learning</td><td>8 Weeks</td></tr>
+          <tr>><td>Artificial Intelligence</td><td>4 Weeks</td></tr>
+          <tr><td>Data Analytics</td><td>6 Weeks</td></tr>
+          <tr><td>Introduction To Python Programming</td><td>8 Weeks</td></tr>
+          <tr><td>Business Intelligence</td><td>4 Weeks</td></tr>
+        </tbody>
+        </table>
+        <br>
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#html" type="button" role="tab"
+            aria-controls="home" aria-selected="true" style="background-color: gold;">Java<i class="fa-solid fa-laptop-code"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab"
+            aria-controls="profile" aria-selected="false" >SQL<i class="fa-solid fa-laptop-code"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#js" type="button" role="tab"
+            aria-controls="contact" aria-selected="false">DOTNET<i class="fa-solid fa-laptop-code"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="testing-tab" data-bs-toggle="tab" data-bs-target="#test" type="button" role="tab"
+            aria-controls="contact1" aria-selected="false">Testing<i class="fa-solid fa-laptop-code"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="home-tab">
+          <h3 style="color: yellow;">Java</h3>
+          <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.</p>
+        </div>
+        <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="profile-tab">
+          <h3 style="color: yellow;">SQL</h3>
+          <p>SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database.
+
+            SQL is the standard language for Relational Database System. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard database language.</p>
+        </div>
+        <div class="tab-pane fade" id="js" role="tabpanel" aria-labelledby="contact-tab">
+          <h3 style="color:yellow">DOTNET</h3>
+          <p>.NET (previously named .NET Core) is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform successor to .NET Framework</p>
+        </div>
+        <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="testing-tab">
+          <h3 style="color:yellow">Testing</h3>
+          <p>Software testing is the act of examining the artifacts and the behavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation</p>
+        </div>
+      </div>
+       
+        <footer class="bg-dark text-center text-lg-start" id="foot">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: gold;">
+            © 2020 Copyright:
+            <a class="text-center p-3">www.coursemy.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>  
+ 
+ 
+</body>
+</html>

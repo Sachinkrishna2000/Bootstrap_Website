@@ -10,12 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3276a9b1ae.js" crossorigin="anonymous"></script>
     <style>
-      .img_fluid{
-       
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-      }
+     
       .carousel-item p{
         text-align: center;
       }
@@ -37,7 +32,6 @@
       }
   
       .card-box {
-        /*margin-left: 40px;*/
         border: 3px solid gold;
         border-radius: 30px;
       }
@@ -54,6 +48,7 @@
         font-family: cursive;
         line-height: 1.2 cm;
       }
+     
 
       .btn1{
        
@@ -70,6 +65,36 @@
       .btn1:hover{
         background-color: rgb(38, 47, 231);
       }
+      .btn2{
+       
+       text-align: center;
+       margin-left: 25%;
+       background-color: navy;
+       color: yellow;
+       width:50%;
+       padding: 10px;
+       border-radius: 20px;
+       border: 2px solid red;
+
+     }
+     .btn2:hover{
+       background-color: rgb(38, 47, 231);
+     }
+     .btn3{
+       
+       text-align: center;
+       margin-left: 25%;
+       background-color: navy;
+       color: yellow;
+       width:50%;
+       padding: 10px;
+       border-radius: 20px;
+       border: 2px solid red;
+
+     }
+     .btn3:hover{
+       background-color: rgb(38, 47, 231);
+     }
   
       
       table{
@@ -102,7 +127,49 @@
     tr:hover{
     background-color: aliceblue;
     }
-    
+    @media screen and (max-width: 992px) and (min-width: 768px) {
+      .btn1{
+        margin-top: 25px;
+      }
+      .btn3{
+        margin-top: 25px;
+      }
+  
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+      .btn1{
+        margin-top: 24px;
+      }
+}
+@media screen and (min-width: 319px) { 
+  .carousel-caption h5 { font-size: 0.9em;}
+  .carousel-caption p {font-size: 0.6em;}  
+  .carousel-item img{height:250px;}
+}
+@media screen and (min-width: 576px) { 
+  .carousel-caption h5 { font-size: 1.3em;}
+  .carousel-caption p {font-size: 1.1em;}
+  .carousel-item img{height:350px;}  
+}
+@media screen and  (min-width: 768px) {
+  .carousel-caption h5 { font-size: 1.4em;}
+  .carousel-caption p {font-size: 1.2em;}  
+  .carousel-item img{height:450px;}
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) { 
+  .carousel-caption h5 { font-size: 1.5em;}
+  .carousel-caption p {font-size: 1.3em;}  
+  .carousel-item img{height:500px;}
+}
+
+@media screen and (min-width: 1024px){
+  .carousel-item img{height:550px;}
+}
+@media screen and (min-width: 1200px){
+  .carousel-item img{height:650px;}
+}
+
+
     </style>
   </head>
 <body>
@@ -140,7 +207,7 @@
         </div>
       </nav>
       <div class="container-fluid" style="background-color: black;">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -148,21 +215,21 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://talktobusiness.com/wp-content/uploads/2022/04/What-Is-Web-Development.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <img src="https://talktobusiness.com/wp-content/uploads/2022/04/What-Is-Web-Development.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block">
               <h5>Be Agile Be in Demand</h5>
               <p>Enhance Your Design Skills From The Best Experts</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <img src="https://itchronicles.com/wp-content/uploads/2021/01/technology-impact-on-life-1024x566.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block">
               <h5>Be Agile Be in Demand</h5>
               <p>Enhance Your Design Skills From The Best Experts</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://www.chandigarhhelp.com/wp-content/uploads/2020/01/Top-Java-Training-Institutes-in-Chandigarh.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <img src="https://www.chandigarhhelp.com/wp-content/uploads/2020/01/Top-Java-Training-Institutes-in-Chandigarh.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block">
               <h5>Be Agile Be in Demand</h5>
               <p>Enhance Your Design Skills From The Best Experts</p>
@@ -207,39 +274,40 @@
        
         <div class="col-md-6 col-lg-3">
             <!-- Bootstrap 5 card box -->
+            
             <div class="card-box h-100">
                 <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" class="img-fluid" alt="">
                 </div>
-                <div class="card-block" style="display: grid;">
+               
                 <h3 class="mt-2 mb-2 text-danger">Web Development</h3>
                 <p class="text-second">Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management </p>
-                </div>
-                <div class="card-block" style="display: grid;">
+              
+                
                 <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Register
                 </button>
                 </div>
             </div>
-        </div>
-
+       
+        
         <div class="col-md-6 col-lg-3">
             <!-- Bootstrap 5 card box -->
             <div class="card-box h-100">
                 <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
                     <img src="https://cdn-icons-png.flaticon.com/128/270/270780.png" class="img-fluid" alt="">
                 </div>
-                <div class="card-block" style="display: grid;">
+                
                 <h3 class="mt-2 mb-2 text-danger">App Development</h3>
                 <p class="text-second">Android software development is the process by which applications are created for devices running the Android operating system. Android apps can be written using Kotlin, Java, and C++ languages</p>
-                </div>
-                <div class="card-block" style="display: grid;">
-                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                
+               
+                <button type="button" class="btn2 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Register
                 </button>
                 </div>
             </div>
-        </div>
+       
 
         <div class="col-md-6 col-lg-3">
             <!-- Bootstrap 5 card box -->
@@ -247,17 +315,17 @@
                 <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
                     <img src="https://cdn-icons-png.flaticon.com/128/3759/3759268.png" class="img-fluid" alt="">
                 </div>
-                <div class="card-block" style="display: grid;">
+               
                 <h3 class="mt-2 mb-2 text-danger">Cyber Security</h3>
                 <p class="text-second">Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security</p>
-                </div>
-                <div class="card-block" style="display: grid;">
-                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               
+               
+                <button type="button" class="btn3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Register
                 </button>
                 </div>
             </div>
-        </div>
+       
 
         <div class="col-md-6 col-lg-3">
             <!-- Bootstrap 5 card box -->
@@ -265,18 +333,15 @@
                 <div class="card-thumbnail mt-4 mb-4" style="display: flex; justify-content: center; align-items: center;">
                     <img src="https://cdn-icons-png.flaticon.com/128/8020/8020363.png" class="img-fluid" alt="">
                 </div>
-                <div class="card-block" style="display: grid;">
+               
                 <h3 class="mt-2 mb-2 text-danger">Cloud Computing</h3>
                 <p class="text-second">Cloud computing is a general term for anything that involves delivering hosted services over the internet. These services are divided into 3 categories or 3 types of cloud computing: IAAS, PAAS & SAAS</p>
-                </div>
-                <br>
-                <div class="card-block" style="display: grid;">
-                <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                
+                <button type="button" class="btn2 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Register
                 </button>
                 </div>
             </div>
-        </div>
 
       
     </div>
@@ -308,7 +373,7 @@
         </div>
       </div>
       <div class="col-12">
-        <h2 class="mt-4 mb-4" id="courses">Courses</h2><br><br>
+        <h2 class="mt-4 mb-4" id="courses">Courses</h2>
     </div>
       <table class="table table-hover table-striped table-bordered" style="width:100%;" border="2">
         <thead>
@@ -349,7 +414,8 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="home-tab">
           <h3 style="color: yellow;">Java</h3>
-          <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.</p>
+          <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.Java is a popular programming language.
+            Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
         </div>
         <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="profile-tab">
           <h3 style="color: yellow;">SQL</h3>
@@ -369,9 +435,9 @@
        
         <footer class="bg-dark text-center text-lg-start" id="foot">
           <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: gold;">
+          <div class="text-center p-3" style="background-color: gold; font-weight: bold;">
             © 2020 Copyright:
-            <a class="text-center p-3">www.coursemy.com</a>
+            <a class="text-center p-3" style="color: black;">www.coursemy.com</a>
           </div>
           <!-- Copyright -->
         </footer>
